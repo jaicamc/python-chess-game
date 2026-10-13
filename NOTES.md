@@ -35,6 +35,30 @@ A log of what I built, what broke, and what I learned, one entry per session.
 
 ---
 
+
+## Phase 1: Board representation (date)
+
+### What I built
+- new_board() returns an 8x8 list of lists using piece codes like "wP", "bR", "--".
+- print_board() prints each row.
+- First pytest test checking the board is 8x8.
+
+### What broke and how I fixed it
+1. Typed Python code (new_board()) into the PowerShell terminal. Python code goes in a .py file.
+2. Ran `python chess_logic.py` while inside the Python prompt (>>>). Used exit() to get back to PowerShell.
+3. NameError for back_rank. The variable was defined in a different place than where I used it.
+4. Named my function `print`, which replaces Python's built-in print. Renamed it print_board.
+5. Nothing printed because my code was in the wrong file, so I was running an empty one. Fixed by checking the tab name and using Get-Content to see what was saved.
+
+### What I learned
+- Functions don't run until they're called.
+- `if __name__ == "__main__":` runs code only when the file is run directly.
+- Don't reuse the same list object for several rows, since changing one would change them all.
+- Don't name my own functions after built-ins.
+
+### Next session goal
+- Phase 2: rook moves.
+
 ## Session template (copy for each new entry)
 
 ## Phase X: Title (date)
