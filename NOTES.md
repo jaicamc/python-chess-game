@@ -36,7 +36,7 @@ A log of what I built, what broke, and what I learned, one entry per session.
 ---
 
 
-## Phase 1: Board representation (date)
+## Phase 1: Board representation
 
 ### What I built
 - new_board() returns an 8x8 list of lists using piece codes like "wP", "bR", "--".
@@ -56,24 +56,3 @@ A log of what I built, what broke, and what I learned, one entry per session.
 - Don't reuse the same list object for several rows, since changing one would change them all.
 - Don't name my own functions after built-ins.
 
-### Next session goal
-- Phase 2: rook moves.
-
-## Session template (copy for each new entry)
-
-## Phase X: Title (date)
-
-### What I built
--
-
-### What broke and how I fixed it
--
-
-### What I learned
--
-
-### What I still don't understand
--
-
-### Next session goal
--
